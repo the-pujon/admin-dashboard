@@ -8,4 +8,4 @@ I have done this <b><i><u>Admin Dashboard</u></i><b> with:
 4. Material UI
 5. Rechart
 
-# <u><i><b>[Click here to Check this project](https://user-management-crud-react-app.netlify.app/)</b></i></u>
+# <u><i><b>[Click here to Check this project](https://admin-dashboard-pujon.netlify.app/)</b></i></u>
