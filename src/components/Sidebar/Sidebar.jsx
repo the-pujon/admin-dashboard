@@ -1,20 +1,20 @@
 import React, { useContext } from "react";
 import "./Sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import StoreIcon from "@mui/icons-material/Store";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import InsertChartIcon from "@mui/icons-material/InsertChart";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
-import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
-import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
+import AccountBoxSharpIcon from "@mui/icons-material/AccountBoxSharp";
+import StorefrontSharpIcon from "@mui/icons-material/StorefrontSharp";
+import CreditCardSharpIcon from "@mui/icons-material/CreditCardSharp";
+import LocalShippingSharpIcon from "@mui/icons-material/LocalShippingSharp";
+import InsertChartSharpIcon from "@mui/icons-material/InsertChartSharp";
+import CircleNotificationsSharpIcon from "@mui/icons-material/CircleNotificationsSharp";
+import SettingsSystemDaydreamSharpIcon from "@mui/icons-material/SettingsSystemDaydreamSharp";
+import PsychologySharpIcon from "@mui/icons-material/PsychologySharp";
+import SettingsSharpIcon from "@mui/icons-material/SettingsSharp";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import ExitToAppSharpIcon from "@mui/icons-material/ExitToAppSharp";
 import { Link } from "react-router-dom";
 import { multiContext } from "../../context/multiCotext/MultipleContext";
-
+import logo from "../Sidebar/LogoMakr-8cyte9.png";
 const Sidebar = () => {
   const { dispatch } = useContext(multiContext);
 
@@ -26,7 +26,9 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">PujonAdmin</span>
+          <span className="logo">
+            <img src={logo} alt="" />
+          </span>
         </Link>
       </div>
       <hr />
@@ -42,47 +44,47 @@ const Sidebar = () => {
 
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
-              <PersonOutlineOutlinedIcon className="icon" />
+              <AccountBoxSharpIcon className="icon" />
               <span>Users</span>
             </li>
           </Link>
 
           <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
-              <StoreIcon className="icon" />
+              <StorefrontSharpIcon className="icon" />
               <span>Products</span>
             </li>
           </Link>
 
           <li>
-            <CreditCardIcon className="icon" />
+            <CreditCardSharpIcon className="icon" />
             <span>Orders</span>
           </li>
           <li>
-            <LocalShippingIcon className="icon" />
+            <LocalShippingSharpIcon className="icon" />
             <span>Delivery</span>
           </li>
           <p className="title">USEFUL</p>
           <li>
-            <InsertChartIcon className="icon" />
+            <InsertChartSharpIcon className="icon" />
             <span>Stats</span>
           </li>
           <li>
-            <NotificationsNoneIcon className="icon" />
+            <CircleNotificationsSharpIcon className="icon" />
             <span>Notification</span>
           </li>
           <p className="title">SERVICE</p>
           <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+            <SettingsSystemDaydreamSharpIcon className="icon" />
             <span>System Health</span>
           </li>
           <li>
-            <PsychologyOutlinedIcon className="icon" />
+            <PsychologySharpIcon className="icon" />
             <span>Logs</span>
           </li>
 
           <li>
-            <SettingsApplicationsIcon className="icon" />
+            <SettingsSharpIcon className="icon" />
             <span>Settings</span>
           </li>
           <p className="title">USER</p>
@@ -91,7 +93,7 @@ const Sidebar = () => {
             <span>Profile</span>
           </li>
           <li onClick={handleLogout}>
-            <ExitToAppIcon className="icon" />
+            <ExitToAppSharpIcon className="icon" />
             <span>Log Out</span>
           </li>
         </ul>

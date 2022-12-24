@@ -13,9 +13,19 @@
     align-items: center;
 
     .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #6439ff;
+
+      color: #4CBFA6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        transform: scale(.6);
+        -webkit-transform: scale(.6);
+        -moz-transform: scale(.6);
+        -ms-transform: scale(.6);
+        -o-transform: scale(.6);
+      }
     }
 
   }
@@ -53,7 +63,7 @@
 
         .icon {
           font-size: 18px;
-          color: #7451f8;
+          color: #4CBFA6;
         }
 
         span {
@@ -78,7 +88,7 @@
       width: 20px;
       height: 20px;
       border-radius: 5px;
-      border: 1px solid #7451f8;
+      border: 1px solid #333;
       cursor: pointer;
       margin: 5px;
 

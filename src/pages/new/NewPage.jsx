@@ -25,7 +25,6 @@ const NewPage = ({ inputs, title, dbName }) => {
   const [file, setFile] = useState("");
   const [data, setData] = useState("");
   const [per, setPer] = useState(null);
-  console.log(dbName);
 
   const navigate = useNavigate();
 
@@ -67,8 +66,6 @@ const NewPage = ({ inputs, title, dbName }) => {
 
     file && uploadFile();
   }, [file]);
-
-  console.log(data);
 
   const handleAdd = async (e) => {
     e.preventDefault();

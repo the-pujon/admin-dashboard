@@ -78,7 +78,7 @@
                         width: 150px;
                         padding: 10px;
                         border: none;
-                        background-color: teal;
+                        background-color: rgb(3, 148, 148);
                         color: white;
                         font-weight: bold;
                         cursor: pointer;
@@ -87,6 +87,10 @@
                         &:disabled {
                             background-color: rgba(3, 109, 109, 0.308);
                             cursor: not-allowed;
+                        }
+
+                        &:hover {
+                            background-color: rgb(2, 111, 111);
                         }
 
                     }

@@ -40,6 +40,7 @@ const Widgets = ({ type }) => {
         title: "ORDERS",
         isMoney: false,
         link: "View all orders",
+        query: "user",
         icon: (
           <ShoppingCartOutlinedIcon
             className="icon"
@@ -57,6 +58,7 @@ const Widgets = ({ type }) => {
         title: "EARNINGS",
         isMoney: true,
         link: "View net earnings",
+        query: "user",
         icon: (
           <MonetizationOnOutlinedIcon
             className="icon"
